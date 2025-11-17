@@ -68,8 +68,3 @@ if __name__ == "__main__":
 Run with:
 
     python main.py
-
-## 📚 Citation
-
-    Letourneau, M., Díaz, M., Velasco, M. (2024).
-    Polynomial Optimization via Product-of-Measures.
