@@ -1,19 +1,20 @@
 # Product-of-Measures (POM) Solver
 
-Augmented Lagrangian + Burer--Monteiro Implementation
+Augmented Lagrangian + Burer–Monteiro Implementation
+====================================================
 
-This repository implements the **augmented Lagrangian + Burer--Monteiro
+This repository implements the **augmented Lagrangian + Burer–Monteiro
 moment relaxation solver** used to approximate polynomial minimization
-problems over the hypercube (\[-1,1\]\^D).\
+problems over the hypercube $[-1,1]^D$.
 The solver follows the Appendix B numerical method described in
-*Letourneau--Díaz--Velasco (2024)* and supports:
+*Letourneau* and supports:
 
--   General multivariate polynomials\
--   Moment matrix construction\
--   Burer--Monteiro factorization (M_d = RR\^`\top`{=tex})\
--   Augmented Lagrangian constraint enforcement\
--   Hand-written gradients for SciPy L-BFGS-B\
--   PSD and Hankel projections (Dykstra)
+- General multivariate polynomials  
+- Moment matrix construction  
+- Burer–Monteiro factorization ($M_d = R R^\top$)  
+- Augmented Lagrangian constraint enforcement  
+- Hand-written gradients for SciPy L-BFGS-B  
+- PSD and Hankel projections (Dykstra)
 
 This is the **full benchmark solver**, not the PGD version.\
 It is used to validate moment relaxation behavior and compare against
